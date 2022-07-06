@@ -185,11 +185,18 @@ Version         : 1.0
   );
 
   // magnific popup init
-  $(".popup-gallery").magnificPopup({
-    delegate: ".popup-img",
+  $(".image-popup-no-margins").magnificPopup({
     type: "image",
-    gallery: {
+    closeOnContentClick: true,
+    closeBtnInside: false,
+    fixedContentPos: true,
+    mainClass: "mfp-no-margins mfp-with-zoom", // class to remove default margin from left and right side
+    image: {
+      verticalFit: true,
+    },
+    zoom: {
       enabled: true,
+      duration: 300, // don't foget to change the duration also in CSS
     },
   });
 
@@ -258,12 +265,12 @@ Version         : 1.0
   // project filter
   $(window).on("load", function () {
     if ($(".filter-box").children().length > 0) {
-      $(".filter-box").isotope({
-        itemSelector: ".filter-item",
-        masonry: {
-          columnWidth: 1,
-        },
-      });
+      // $(".filter-box").isotope({
+      //   itemSelector: ".filter-item",
+      //   masonry: {
+      //     columnWidth: 1,
+      //   },
+      // });
 
       $(".filter-btns").on("click", "li", function () {
         var filterValue = $(this).attr("data-filter");
@@ -275,6 +282,19 @@ Version         : 1.0
           $(this).siblings("li.active").removeClass("active");
           $(this).addClass("active");
         });
+      });
+
+      $(".filter-box img.lazy").lazy({
+        placeholder: "../img/icon/loading.png",
+        afterLoad: function (element) {
+          element.removeClass("adjust-size");
+          $(".filter-box").isotope({
+            itemSelector: ".filter-item",
+            masonry: {
+              columnWidth: 1,
+            },
+          });
+        },
       });
     }
   });

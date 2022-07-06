@@ -797,7 +797,6 @@ nav menu css
     position: relative;
   }
 
-
   .navbar .nav-item .nav-link.active,
   .navbar .nav-item:hover .nav-link {
     color: cadetblue;
@@ -864,7 +863,6 @@ nav menu css
     color: #fff;
   }
 }
-
 
 /*bootstrap nav*/
 .navbar {
@@ -4165,4 +4163,53 @@ home 3
 
 .home-3 .navbar-toggler-icon {
   color: #fff;
+}
+
+/* padding-bottom and top for image */
+.mfp-no-margins img.mfp-img {
+  padding: 0;
+}
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+  top: 0;
+  bottom: 0;
+}
+/* padding for main container */
+.mfp-no-margins .mfp-container {
+  padding: 0;
+}
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  backface-visibility: hidden;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+  opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+img.mfp-img {
+  width: 600px;
+}
+.adjust-size {
+  width: 300px;
+  height: 300px;
+}
+img.lazy {
+  background-color: #fff;
+  background-image: url("../img/icon/loading.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
