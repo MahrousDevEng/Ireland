@@ -299,6 +299,9 @@ Version         : 1.0
     }
   });
 
+  // Normal Lazy Load
+  $(".normal-lazy").length && $(".normal-lazy").lazy();
+
   // copywrite date
   let date = new Date().getFullYear();
   $("#date").html(date);
