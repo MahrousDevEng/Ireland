@@ -4213,3 +4213,12 @@ img.lazy {
   background-repeat: no-repeat;
   background-size: contain;
 }
+/* .custom-map {
+  width: 600px;
+  margin-lef
+  max-width: 100%;
+} */
+.custom-map iframe {
+  width: 100%;
+  min-height: 400px;
+}
