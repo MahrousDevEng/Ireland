@@ -4213,7 +4213,11 @@ img.lazy {
   background-repeat: no-repeat;
   background-size: contain;
 }
-.custom-map iframe {
+.custom-map {
   width: 100%;
-  min-height: 400px;
+  height: 50vh;
+}
+.video-wrapper iframe {
+  width: 100%;
+  height: auto;
 }

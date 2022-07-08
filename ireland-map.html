@@ -137,7 +137,9 @@
                   <a class="nav-link" href="gallery.html">Gallery</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="ireland-map.html">Ireland Map</a>
+                  <a class="nav-link active" href="ireland-map.html"
+                    >Ireland Map</a
+                  >
                 </li>
               </ul>
             </div>
@@ -149,17 +151,22 @@
     <!-- Content -->
     <main class="bg py-120">
       <div class="container">
-        <div class="custom-map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96708.34194156103!2d-74.03927096447748!3d40.759040329405195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4a01c8df6fb3cb8!2sSolomon%20R.%20Guggenheim%20Museum!5e0!3m2!1sen!2sbd!4v1619410634508!5m2!1sen!2s"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            
-          ></iframe>
-        </div>
+        <div id="map" class="custom-map"></div>
       </div>
     </main>
+
+    <!-- Map Marker Modal -->
+    <div
+      class="modal fade"
+      tabindex="-1"
+      id="mapMarkerModal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content"></div>
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer-area" id="contactUs">
@@ -281,6 +288,11 @@
     <script src="assets/js/counter-up.js"></script>
     <script src="assets/js/masonry.pkgd.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyPpKMArtynnj8BqsSVDz80y-Pu6OLXCE&callback=initMap&v=weekly"
+      defer
+    ></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/mapScript.js"></script>
   </body>
 </html>
