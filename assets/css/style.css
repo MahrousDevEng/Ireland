@@ -22,7 +22,7 @@ general css
 }
 
 * {
-  scroll-behavior: inherit !important;
+  scroll-behavior: smooth;
 }
 /* Scrollbar */
 ::-webkit-scrollbar {

@@ -8,19 +8,6 @@ Version         : 1.0
 (function ($) {
   "use strict";
 
-  // Scroll To Section Inside Page
-  $("[data-scroll]").on("click", function (e) {
-    e.preventDefault();
-
-    $("html, body").animate(
-      {
-        scrollTop:
-          $($(this).data("scroll")).offset().top - $(".navbar").height(),
-      },
-      500
-    );
-  });
-
   // multi level dropdown menu
   $(".dropdown-menu a.dropdown-toggle").on("click", function (e) {
     if (!$(this).next().hasClass("show")) {
