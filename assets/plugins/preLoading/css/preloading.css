@@ -1,0 +1,91 @@
+/* PRELOADER */
+.preloader {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  transition: all cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s;
+  overflow: hidden;
+}
+.preloader .inner {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  animation-name: preloader-inner;
+  animation-duration: 0.8s;
+  transition: all ease 0.8s;
+}
+.preloader .inner figure {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-bottom: 0;
+}
+.preloader .inner figure img {
+  height: 60px;
+}
+.preloader .inner small {
+  width: 100%;
+  display: block;
+  color: #fff;
+  font-family: "Cinzel", serif;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 15px;
+}
+.preloader .inner .progress-bar {
+  background: none;
+}
+.preloader svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: #080808;
+}
+.preloader svg path {
+  animation-name: preloader-svg;
+  -webkit-animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -moz-animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -o-animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -ms-animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation-duration: 0.7s;
+  animation-play-state: paused;
+  animation-fill-mode: forwards;
+}
+/* PAGE LOADED */
+.page-loaded .preloader {
+  top: 100%;
+}
+.page-loaded .preloader .inner {
+  transform: translateY(50px);
+  opacity: 0;
+}
+.page-loaded .preloader svg path {
+  animation-play-state: running;
+}
+.page-loaded .navbar {
+  transform: translateY(0);
+}
+.page-loaded .slider {
+  transform: scale(1);
+  opacity: 1;
+}
+.page-loaded .page-header {
+  transform: scale(1);
+  opacity: 1;
+}
