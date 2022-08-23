@@ -30,9 +30,13 @@
   position: relative;
   max-width: 100%;
   display: flex;
+  justify-content: center;
 }
 .building .location-iframe iframe {
   max-width: 100%;
+}
+.building .video-wrapper {
+  text-align: center;
 }
 .building .video-wrapper video {
   max-width: 600px;

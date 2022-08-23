@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Required Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#feed01" />
+    <meta name="author" content="Themezinho" />
+    <meta name="description" content="Ireland historical museum website" />
+    <meta
+      name="keywords"
+      content="museum, historical, hospital, church, college"
+    />
+    <!-- Icons -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/images/logo&icons/logo_updated.webp"
+    />
+    <title>Ireland Historical WebSite</title>
+    <!-- Plugins Styles -->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/preLoading/css/preloading.css"
+    />
+    <link rel="stylesheet" href="assets/css/fontawesome/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/egypt-icons/style.css" />
+    <link
+      rel="stylesheet"
+      href="assets/plugins/bootstrap/css/bootstrap.min.css"
+    />
+    <!-- Page Styles -->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/jquery.prettyPhoto/css/jquery.prettyPhoto.css"
+    />
+    <link rel="stylesheet" href="assets/css/character.css" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Pre-loading -->
+    <div class="preloader" id="preloader">
+      <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1">
+        <path
+          d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"
+        ></path>
+      </svg>
+      <div class="inner">
+        <canvas
+          class="progress-bar"
+          id="progress-bar"
+          width="200"
+          height="200"
+        ></canvas>
+        <figure>
+          <img src="assets/images/logo&icons/logo_updated.webp" alt="Image" />
+        </figure>
+        <small>Loading</small>
+      </div>
+      <!-- end inner -->
+      <!-- end preloder -->
+      <div class="page-transition">
+        <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1">
+          <path
+            d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"
+          ></path>
+        </svg>
+      </div>
+    </div>
+
+    <div class="app">
+      <!-- Header -->
+      <header class="site-header site-header__header-one" id="fixedHeader">
+        <nav
+          class="navbar navbar-expand-lg navbar-light header-navigation stricky"
+        >
+          <div class="container clearfix">
+            <div class="logo-box">
+              <a class="navbar-brand" href="index.html">
+                <img
+                  src="assets/images/logo&icons/logo_updated.webp"
+                  class="main-logo"
+                  alt="Awesome Image"
+                />
+              </a>
+              <button class="menu-toggler" data-target=".main-navigation">
+                <a
+                  href="#"
+                  class="site-header__sidemenu-nav side-menu__toggler"
+                >
+                  <span class="site-header__sidemenu-nav-line"></span>
+                  <span class="site-header__sidemenu-nav-line"></span>
+                  <span class="site-header__sidemenu-nav-line"></span>
+                </a>
+              </button>
+            </div>
+            <div class="main-navigation">
+              <ul class="navigation-box @@extra_class">
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="building-1.html">Historical buildings</a>
+                  <ul class="submenu shadow">
+                    <li>
+                      <a href="building-1.html">Royal Hospital Kilmainham</a>
+                    </li>
+                    <li>
+                      <a href="building-2.html">St. Audoen's Church</a>
+                    </li>
+                    <li>
+                      <a href="building-3.html">Trinity College Dublin</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="current">
+                  <a href="all-characters.html">Characters</a>
+                  <ul class="submenu shadow">
+                    <li>
+                      <a href="character-1.html">Robert Emmet</a>
+                    </li>
+                    <li>
+                      <a href="character-2.html">William Molyneux FRS</a>
+                    </li>
+                    <li>
+                      <a href="character-3.html">Oscar Wilde</a>
+                    </li>
+                    <li>
+                      <a href="character-4.html">Roland FitzEustace</a>
+                    </li>
+                    <li>
+                      <a href="character-5.html">Isabel Marion Weir Johnston</a>
+                    </li>
+                    <li>
+                      <a href="character-6.html">James Napper Tandy</a>
+                    </li>
+                    <li>
+                      <a href="character-7.html">Brian Boru</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="ireland-map.html">Ireland Map</a>
+                </li>
+                <li>
+                  <a href="index.html#aboutUs">About Us</a>
+                </li>
+                <li>
+                  <a href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                  <a href="index.html#contactUs">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="flex-grow-1 building">
+        <!-- Banner -->
+        <section class="exhibhition-one">
+          <div class="container">
+            <div class="block-title text-center">
+              <p class="block-title__tag-line">Characters</p>
+              <h2 class="block-title__title">Ireland Characters</h2>
+            </div>
+            <div class="row mx-0">
+              <div class="col-lg-4">
+                <div
+                  class="exhibhition-one__single wow fadeInUp"
+                  data-wow-duration="1500ms"
+                >
+                  <div class="exhibhition-one__image">
+                    <div class="exhibhition-one__image-inner">
+                      <span class="exhibhition-one__image-border-1"></span>
+                      <span class="exhibhition-one__image-border-2"></span>
+                      <span class="exhibhition-one__image-border-3"></span>
+                      <span class="exhibhition-one__image-border-4"></span>
+                      <img
+                        src="assets/images/characters/character-1.webp"
+                        alt="Awesome Image"
+                      />
+                      <a
+                        href="assets/images/characters/character-1.webp"
+                        data-rel="prettyPhoto"
+                        class="exhibhition-one__image-link prettyPhoto lightzoom zoom"
+                        ><i class="egypt-icon-arrow-1"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="exhibhition-one__content">
+                    <a href="character-3.html" class="exhibhition-one__category"
+                      >Oscar Wilde</a
+                    >
+                    <h3 class="exhibhition-one__title">
+                      <a href="character-3.html"
+                        >Oscar Fingal O'Flahertie Wills Wilde was an Irish poet
+                        and playwright...</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div
+                  class="exhibhition-one__single wow fadeInUp"
+                  data-wow-duration="1500ms"
+                >
+                  <div class="exhibhition-one__image">
+                    <div class="exhibhition-one__image-inner">
+                      <span class="exhibhition-one__image-border-1"></span>
+                      <span class="exhibhition-one__image-border-2"></span>
+                      <span class="exhibhition-one__image-border-3"></span>
+                      <span class="exhibhition-one__image-border-4"></span>
+                      <img
+                        src="assets/images/characters/character-6.webp"
+                        alt="Awesome Image"
+                      />
+                      <a
+                        href="assets/images/characters/character-6.webp"
+                        data-rel="prettyPhoto"
+                        class="exhibhition-one__image-link prettyPhoto lightzoom zoom"
+                        ><i class="egypt-icon-arrow-1"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="exhibhition-one__content">
+                    <a href="character-4.html" class="exhibhition-one__category"
+                      >Roland FitzEustace</a
+                    >
+                    <h3 class="exhibhition-one__title">
+                      <a href="character-4.html"
+                        >Roland FitzEustace, 1st and last Baron Portlester, was
+                        an Irish peer...</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div
+                  class="exhibhition-one__single wow fadeInUp"
+                  data-wow-duration="1500ms"
+                >
+                  <div class="exhibhition-one__image">
+                    <div class="exhibhition-one__image-inner">
+                      <span class="exhibhition-one__image-border-1"></span>
+                      <span class="exhibhition-one__image-border-2"></span>
+                      <span class="exhibhition-one__image-border-3"></span>
+                      <span class="exhibhition-one__image-border-4"></span>
+                      <img
+                        src="assets/images/characters/character-7.webp"
+                        alt="Awesome Image"
+                      />
+                      <a
+                        href="assets/images/characters/character-7.webp"
+                        data-rel="prettyPhoto"
+                        class="exhibhition-one__image-link prettyPhoto lightzoom zoom"
+                        ><i class="egypt-icon-arrow-1"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="exhibhition-one__content">
+                    <a href="character-5.html" class="exhibhition-one__category"
+                      >Isabel Marion Weir Johnston</a
+                    >
+                    <h3 class="exhibhition-one__title">
+                      <a href="character-5.html"
+                        >Isabel Marion Weir Johnston was born 25 November 1883
+                        in...</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div
+                  class="exhibhition-one__single wow fadeInUp"
+                  data-wow-duration="1500ms"
+                >
+                  <div class="exhibhition-one__image">
+                    <div class="exhibhition-one__image-inner">
+                      <span class="exhibhition-one__image-border-1"></span>
+                      <span class="exhibhition-one__image-border-2"></span>
+                      <span class="exhibhition-one__image-border-3"></span>
+                      <span class="exhibhition-one__image-border-4"></span>
+                      <img
+                        src="assets/images/characters/character-2.webp"
+                        alt="Awesome Image"
+                      />
+                      <a
+                        href="assets/images/characters/character-2.webp"
+                        data-rel="prettyPhoto"
+                        class="exhibhition-one__image-link prettyPhoto lightzoom zoom"
+                        ><i class="egypt-icon-arrow-1"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="exhibhition-one__content">
+                    <a href="character-6.html" class="exhibhition-one__category"
+                      >James Napper Tandy</a
+                    >
+                    <h3 class="exhibhition-one__title">
+                      <a href="character-6.html"
+                        >James Napper Tandy was a celebrated radical in
+                        Dublin...</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div
+                  class="exhibhition-one__single wow fadeInUp"
+                  data-wow-duration="1500ms"
+                >
+                  <div class="exhibhition-one__image">
+                    <div class="exhibhition-one__image-inner">
+                      <span class="exhibhition-one__image-border-1"></span>
+                      <span class="exhibhition-one__image-border-2"></span>
+                      <span class="exhibhition-one__image-border-3"></span>
+                      <span class="exhibhition-one__image-border-4"></span>
+                      <img
+                        src="assets/images/characters/character-3.webp"
+                        alt="Awesome Image"
+                      />
+                      <a
+                        href="assets/images/characters/character-3.webp"
+                        data-rel="prettyPhoto"
+                        class="exhibhition-one__image-link prettyPhoto lightzoom zoom"
+                        ><i class="egypt-icon-arrow-1"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="exhibhition-one__content">
+                    <a href="character-7.html" class="exhibhition-one__category"
+                      >Brian Boru</a
+                    >
+                    <h3 class="exhibhition-one__title">
+                      <a href="character-7.html"
+                        >Brian Boru ,High King of Ireland, was the first king who
+                        could truly...</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div
+                  class="exhibhition-one__single wow fadeInUp"
+                  data-wow-duration="1500ms"
+                >
+                  <div class="exhibhition-one__image">
+                    <div class="exhibhition-one__image-inner">
+                      <span class="exhibhition-one__image-border-1"></span>
+                      <span class="exhibhition-one__image-border-2"></span>
+                      <span class="exhibhition-one__image-border-3"></span>
+                      <span class="exhibhition-one__image-border-4"></span>
+                      <img
+                        src="assets/images/characters/character-4.webp"
+                        alt="Awesome Image"
+                      />
+                      <a
+                        href="assets/images/characters/character-4.webp"
+                        data-rel="prettyPhoto"
+                        class="exhibhition-one__image-link prettyPhoto lightzoom zoom"
+                        ><i class="egypt-icon-arrow-1"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="exhibhition-one__content">
+                    <a href="character-1.html" class="exhibhition-one__category"
+                      >Robert Emmet</a
+                    >
+                    <h3 class="exhibhition-one__title">
+                      <a href="character-1.html"
+                        >Robert Emmet was one of the most romantic of all
+                        Irish...</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div
+                  class="exhibhition-one__single wow fadeInUp"
+                  data-wow-duration="1500ms"
+                >
+                  <div class="exhibhition-one__image">
+                    <div class="exhibhition-one__image-inner">
+                      <span class="exhibhition-one__image-border-1"></span>
+                      <span class="exhibhition-one__image-border-2"></span>
+                      <span class="exhibhition-one__image-border-3"></span>
+                      <span class="exhibhition-one__image-border-4"></span>
+                      <img
+                        src="assets/images/characters/character-5.webp"
+                        alt="Awesome Image"
+                      />
+                      <a
+                        href="assets/images/characters/character-5.webp"
+                        data-rel="prettyPhoto"
+                        class="exhibhition-one__image-link prettyPhoto lightzoom zoom"
+                        ><i class="egypt-icon-arrow-1"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="exhibhition-one__content">
+                    <a href="character-2.html" class="exhibhition-one__category"
+                      >William Molyneux FRS</a
+                    >
+                    <h3 class="exhibhition-one__title">
+                      <a href="character-2.html"
+                        >William Molyneux, astronomer and natural philosopher, was
+                        born...</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer-area pt-5">
+        <div class="footer-widget">
+          <div class="container">
+            <div class="row footer-widget-wrapper pt-100 pb-70">
+              <div class="col-md-6 col-lg-4">
+                <div class="footer-widget-box about-us">
+                  <a href="index.html" class="footer-logo">
+                    <img
+                      src="assets/images/logo&icons/logo_updated.webp"
+                      alt=""
+                    />
+                  </a>
+                  <p class="mb-3">
+                    Provide brief details about some historical irish buildings
+                    and some irish famous characters
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="footer-widget-box list">
+                  <h4 class="footer-widget-title">About Us</h4>
+                  <ul class="footer-list">
+                    <li>
+                      <a href="all-characters.html"
+                        ><i class="fas fa-caret-right"></i>Ireland Characters</a
+                      >
+                    </li>
+                    <li>
+                      <a href="ireland-map.html"
+                        ><i class="fas fa-caret-right"></i>Ireland Map</a
+                      >
+                    </li>
+                    <li>
+                      <a href="gallery.html"
+                        ><i class="fas fa-caret-right"></i>Gallery</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="footer-widget-box list">
+                  <h4 class="footer-widget-title">Contact Us</h4>
+                  <div class="footer-newsletter">
+                    <ul class="footer-contact">
+                      <li>
+                        <a href="tel:00353834312401"
+                          ><i class="far fa-phone"></i>00353834312401</a
+                        >
+                      </li>
+                      <li>
+                        <i class="far fa-map-marker-alt"></i>145 S Circular Rd,
+                        Saint Catherine's, Dublin, D08 HY40
+                      </li>
+                      <li>
+                        <a href="email:lorem@lorem.com"
+                          ><i class="far fa-envelope"></i
+                          ><span class="__cf_email__"
+                            >alitheses0@gmail.com</span
+                          ></a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-6 align-self-center">
+                <p class="copyright-text">
+                  &copy; Copyright <span id="date"></span>
+                  <a href="index.html"> Ireland </a> All Rights Reserved.
+                </p>
+              </div>
+              <div class="col-md-6 align-self-center">
+                <ul class="footer-social mb-0">
+                  <li>
+                    <a
+                      href="https://www.facebook.com/profile.php?id=100082822364823"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/BuildingsIrish"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/irish-historical-buildings-a43b0a243/"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Plugins Scripts -->
+    <script src="assets/plugins/preLoading/js/preloading.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Page Plugins -->
+    <script src="assets/plugins/wow.min.js"></script>
+    <script src="assets/plugins/jquery.prettyPhoto/js/jquery.prettyPhoto.js"></script>
+    <!-- Custom Scripts -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/character.js"></script>
+  </body>
+</html>

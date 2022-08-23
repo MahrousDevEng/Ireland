@@ -24,6 +24,8 @@ body {
 ul,
 ol {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 a,
 a:hover,
@@ -150,6 +152,11 @@ a:focus {
   padding: 21px 0;
   border-right: 1px solid #403e3f;
   padding-right: 40px;
+}
+@media (max-width: 575px) {
+  .header-navigation .container .navbar-brand img {
+    width: 140px;
+  }
 }
 .header-navigation .container .menu-toggler {
   display: none;
@@ -808,9 +815,6 @@ a:focus {
     padding-top: 0px;
     padding-bottom: 0px;
   }
-  .header-navigation .container .menu-toggler {
-    margin-left: 25px;
-  }
   .site-header__header-two .header-navigation .container .menu-toggler {
     color: var(--alt-color);
     margin-left: 0;
@@ -1153,4 +1157,54 @@ footer css
 .fadeInLeftBig {
   -webkit-animation-name: fadeInLeftBig;
   animation-name: fadeInLeftBig;
+}
+/* fadeInUp */
+@-webkit-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(20px);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	}
+}
+@-moz-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-moz-transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		-moz-transform: translateY(0);
+	}
+}
+@-o-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-o-transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		-o-transform: translateY(0);
+	}
+}
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.fadeInUp {
+	-webkit-animation-name: fadeInUp;
+	-moz-animation-name: fadeInUp;
+	-o-animation-name: fadeInUp;
+	animation-name: fadeInUp;
 }
