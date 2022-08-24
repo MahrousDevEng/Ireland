@@ -6,13 +6,15 @@ $(function () {
 
   if (Header.length) {
     $(window).on("scroll", function () {
-      if ($(this).scrollTop() > Header.innerHeight()) {
-        if (!Header.hasClass("fixed")) {
-          Header.addClass("fixed");
-        }
-      } else {
-        if (Header.hasClass("fixed")) {
-          Header.removeClass("fixed");
+      if ($("body").height() > $(this).height() * 1.5) {
+        if ($(this).scrollTop() > Header.innerHeight()) {
+          if (!Header.hasClass("fixed")) {
+            Header.addClass("fixed");
+          }
+        } else {
+          if (Header.hasClass("fixed")) {
+            Header.removeClass("fixed");
+          }
         }
       }
     });
